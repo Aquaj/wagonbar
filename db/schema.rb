@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160215154451) do
+ActiveRecord::Schema.define(version: 20160215162209) do
 
   create_table "batches", force: :cascade do |t|
     t.integer  "number"
@@ -25,6 +25,8 @@ ActiveRecord::Schema.define(version: 20160215154451) do
     t.string   "content"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer  "author_id"
+    t.integer  "place_id"
   end
 
   create_table "places", force: :cascade do |t|

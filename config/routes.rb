@@ -3,12 +3,6 @@ Rails.application.routes.draw do
 
   get 'places/new'
 
-  get 'places/destroy'
-
-  get 'places/update'
-
-  get 'places/create'
-
   get 'places/edit'
 
   get 'places/show'
